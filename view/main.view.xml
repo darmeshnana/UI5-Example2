@@ -1,0 +1,25 @@
+<view   xmlns="sap.m"
+        xmlns:layout="sap.ui.layout"
+        controllerName="Example2.app.controller.main">
+    <Page   title="Example 2 - Main">
+        <content>
+            <layout:VerticalLayout  class="sapUiContentPadding"
+                                    width="100%">
+
+                <Label text="Enter Text here:" labelFor="myInput"/>
+                <Input  id="myInput"
+                        value="{/mainInput}"
+                        width="400px"
+                        fieldWidth="60%"
+                        class="sapUiSmallMarginBottom" />
+            </layout:VerticalLayout>
+        </content>
+
+        <footer>
+            <OverflowToolbar id="otbFooter">
+                <ToolbarSpacer/>
+                <Button text="Detail" press="onDetailPress"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</view>

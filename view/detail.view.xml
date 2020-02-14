@@ -1,0 +1,28 @@
+<view   xmlns="sap.m"
+        xmlns:layout="sap.ui.layout"
+        controllerName="Example2.app.controller.detail">
+    <Page   title="Example 2 - Detail"
+            showNavButton="true"
+            navButtonPress="navigateBack">
+        <content>
+            <layout:VerticalLayout  class="sapUiContentPadding"
+                                    width="100%">
+
+                <Label text="This text was entered:" labelFor="myInput"/>
+                <Input  id="myInput"
+                        value="{/mainInput}"
+                        editable="false"
+                        width="400px"
+                        fieldWidth="60%"
+                        class="sapUiSmallMarginBottom" />
+            </layout:VerticalLayout>
+        </content>
+
+        <footer>
+            <OverflowToolbar id="otbFooter">
+                <ToolbarSpacer/>
+                <Button text="Main" press="onMainPress"/>
+            </OverflowToolbar>
+        </footer>
+    </Page>
+</view>
